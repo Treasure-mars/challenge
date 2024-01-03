@@ -123,25 +123,24 @@ const {
  *   post:
  *     summary: Play for the prize
  *     description: Endpoint of play for the prize
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             required:
- *               - userID
- *               - productID
- *             properties:
- *               userID:
- *                 type: number
- *                 description: userID
- *               productID:
- *                 type: number
- *                 description: productID
- *             example:
- *               username: 1
- *               password: 3
+ *     parameters:
+ *      - in: body
+ *        name: user
+ *        schema:
+ *          type: object
+ *          required:
+ *            - userID
+ *            - productID
+ *          properties:
+ *            userID:
+ *              type: number
+ *              description: userID
+ *            productID:
+ *              type: number
+ *              description: productID
+ *          example:
+ *            userID: 1
+ *            productID: 3
  *     responses:
  *       200:
  *         description: Successful signup
