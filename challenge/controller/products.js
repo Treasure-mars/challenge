@@ -9,7 +9,7 @@ const viewAllProducts = asyncWrapper(async (req,res)=>{
 
 const getOneProduct = asyncWrapper(async (req,res)=>{
     const {id:productID} = req.params
-    const product = await Products.findOne({_id:productID})
+    const product = await Products.findOne({where: { id: productID }})
     res.status(200).json({ product })
 })
 

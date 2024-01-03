@@ -1,0 +1,14 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Library API",
+      "version": "1.0.0",
+      "description": "Challenge API"
+    },
+    "basePath": "/api/v1",
+    "schemes": [ "http" ],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {}
+  }
+  
